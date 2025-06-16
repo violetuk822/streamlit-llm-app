@@ -77,7 +77,7 @@ def get_expert_response(input_text, expert_choice):
         ]
         
         # LLMを実行して回答を取得
-        result = llm(messages)
+        result = llm.invoke(messages)
         
         return result.content
         
